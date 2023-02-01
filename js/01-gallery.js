@@ -46,10 +46,10 @@ function onOpenModalWindow(event) {
     >`,
     {
       onShow: (instance) => {
-        window.addEventListener("keydown", onEscPress);
+       galleryContainer.addEventListener("keydown", onEscPress);
       },
       onClose: (instance) => {
-        window.removeEventListener("keydown", onEscPress);
+       galleryContainer.removeEventListener("keydown", onEscPress);
       },
     }
   );
